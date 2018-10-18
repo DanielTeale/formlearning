@@ -1,0 +1,21 @@
+<%= form_with model: book, local: true do |form|%>
+  <div>
+    <%= form.label :title, "Title" %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :published, "Published" %>
+    <%= form.date_field :published %>
+  </div>
+  <div>
+    <%= form.label :sales, "Sales" %>
+    <%= form.number_field :sales %>
+  </div>
+  <div>
+    <%= form.label :genre, "Genre" %>
+    <%= form.select :genre, ["Thriller", "Romcom", "Drama", "Horror"] %>
+  </div>
+  <div>
+    <%= form.submit  %>
+  </div>
+<% end %>

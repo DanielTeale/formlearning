@@ -1,0 +1,34 @@
+<h1>Editing Book</h1>
+
+<%= render 'form', book: @book %>
+
+<!--<form action="/books" method='post'>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <div>
+    <label>Title </label>
+    <input type="text" name='book[title]' value='<%= @book.title %>'>
+  </div>
+  <div>
+    <label>Published </label>
+    <input type="date" name='book[published]' value='<%= @book.published %>'>
+  </div>
+  <div>
+    <label>Sales </label>
+    <input type="number" name='book[sales]' value='<%= @book.sales %>'>
+  </div>
+  <div>
+    <label>Genre </label>
+    <select name="book[genre]" value='<%=  %>'>
+      <option value="1" <%= @book.genre == 1 ? "selected" : nil %>>Thriller</option>
+      <option value="2" <%= @book.genre == 2 ? "selected" : nil %>>Romcom</option>
+      <option value="3" <%= @book.genre == 3 ? "selected" : nil %>>Drama</option>
+      <option value="4" <%= @book.genre == 4 ? "selected" : nil %>>Horror</option>
+    </select>
+  </div>
+  <div>
+    <input type="submit" name="Create New Book">
+  </div>
+</form> -->
+
+<%= link_to 'Show', @book %> |
+<%= link_to 'Back', books_path %>
